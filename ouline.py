@@ -1,9 +1,12 @@
 #import beautifulsoup and request here
+import beautifulsoup
+import requests
+import json
 
+#function to get job list from url f'https://www.talent.com/jobs?k={role}&l={location}'
 
-#function to get job list from url 'https://www.monster.com/jobs/search?q={role}&where={location}'
 def getJobList(role,location):
-    url = 'https://www.monster.com/jobs/search?q={role}&where={location}'
+    url = f'https://www.talent.com/jobs?k={role}&l={location}'
     # Complete the missing part of this function here
 
 #save data in JSON file
@@ -17,6 +20,10 @@ def main():
     print("Enter role you want to search")
     role = input()
     # Complete the missing part of this function here
+    print("Enter location you want to search")
+    location = input()
     
 if __name__ == '__main__':
     main()
+
+
